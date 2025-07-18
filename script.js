@@ -10,6 +10,10 @@ function togglePasswordVisibility() {
 
 document.getElementById("showPwd").addEventListener("click", togglePasswordVisibility);
 
+document.getElementById("phone").addEventListener("input", function (e) {
+  this.value = this.value.replace(/\D/g, ""); 
+});
+
 document.getElementById("submit").addEventListener("click", function () {
   let error = "";
 
